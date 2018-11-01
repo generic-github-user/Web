@@ -1,0 +1,111 @@
+*{
+	margin:0px;
+	padding:0px;
+	outline:none;
+	font-family:"Oswald", sans-serif;
+	user-select:none;
+}
+
+input[type="text"],#update{
+	border:none;
+	border-radius:5px;
+	margin:5px;
+	padding:10px;
+	width:80%;
+	height:50px;
+	background-color:#FFF;
+	transition:width 1s ease, background-color 1.5s ease, border-radius 2s ease, color 2.5s ease;
+}
+
+input[type="text"]:hover,#update:hover{
+	width:70%;
+	border-radius:10px;
+	background-color:#FAFAFA;
+	transition:width 1s ease, background-color 1.5s ease, border-radius 2s ease, color 2.5s ease;
+}
+
+input[type="text"]:focus,#update:active{
+	width:60%;
+	border-radius:20px;
+	background-color:#DDD;
+	transition:width 1s ease, background-color 1.5s ease, border-radius 2s ease, color 2.5s ease;
+}
+
+input[type="checkbox"]{
+	margin:5px;
+	width:25px;
+	height:25px;
+	transition:width 1s ease, height 1s ease;
+}
+
+input[type="checkbox"]:hover{
+	margin:5px;
+	width:30px;
+	height:30px;
+	transition:width 1s ease, height 1s ease;
+}
+
+hr{
+	color:#BBB;
+	margin:20px;
+}
+
+.header{
+	font-weight:bold;
+	margin:10px;
+}
+
+#sidebar{
+	width:10vw;
+	height:100vh;
+	background-color:rgba(240,240,240,0.5);
+	opacity:0;
+	transition:width 1s ease, opacity 2s ease;
+	position:fixed;
+	z-index:1;
+	text-align:center;
+	float:left;
+	padding:10px;
+}
+
+#sidebar:hover{
+	width:20vw;
+	opacity:1;
+	transition:width 1s ease, opacity 2s ease;
+}
+
+#canvas{
+	overflow:hidden;
+	position:fixed;
+	z-index:0;
+	float:right;
+}
+
+
+
+#showMarkers{
+	position:relative;
+	margin: auto;
+}
+
+#showMarkersLabel{
+	position:relative;
+	margin: auto;
+}
+
+#update{
+	color:#FFF;
+	background-color:#888;
+}
+
+#update:hover{
+	color:#EEE;
+	background-color:#AAA;
+}
+
+#update:active{
+	color:#555;
+	background-color:#CCC;
+	width:70%;
+	transition:width 0.1s ease, background-color 0.15s ease, border-radius 0.2s ease, color 0.25s ease;
+}

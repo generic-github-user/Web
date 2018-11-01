@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Web
+		</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="sidebar">
+			<p class="header">Nodes</p>
+			<input id="nodeNumber" type="text" placeholder="Number"></input>
+		
+			<p class="header">Connections</p>
+			<input id="connectionNumber" type="text" placeholder="Number"></input>	
+			<input id="minOpacity" type="text" placeholder="Min Opacity"></input>
+			<input id="maxOpacity" type="text" placeholder="Max Opacity"></input>
+			<input id="minWidth" type="text" placeholder="Min Width"></input>
+			<input id="maxWidth" type="text" placeholder="Max Width"></input>
+			
+			<p class="header">Other</p>
+			<input id="showMarkers" type="checkbox"></input>
+			<p id="showMarkersLabel">Show Markers</p>
+			
+			<hr />
+			
+			<button id="update" onclick="update();">Update</button>
+		</div>
+		<canvas id="canvas" width="1000" height="1000"></canvas>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
